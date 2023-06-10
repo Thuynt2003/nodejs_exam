@@ -15,6 +15,7 @@ exports.create_user = (req,res)=>{
 };
 
 exports.save_user = async (req,res)=>{
+   
     const data = req.body;
     const user = new User(data);
     try {
